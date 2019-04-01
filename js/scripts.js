@@ -1,0 +1,1 @@
+// prompt('hello') //checking to see if the script file is correctly linked
