@@ -1,3 +1,17 @@
 html {
     font-family: 'Mukta', sans-serif;
 }
+
+.brand img {
+    display: inline-block;
+    height: 30px;
+}
+
+.topnav {
+    background-color: black;
+    height: 70px;
+}
+
+.topnav a {
+    font-size: 20px;
+}
