@@ -2,16 +2,64 @@ html {
     font-family: 'Mukta', sans-serif;
 }
 
-.brand img {
-    display: inline-block;
-    height: 30px;
+body {
+    margin: 0px;
 }
 
-.topnav {
-    background-color: black;
-    height: 70px;
+#workbutton {
+    background-color: red;
+    /* height: 60px; */
 }
 
-.topnav a {
-    font-size: 20px;
+.Navbar {
+    background-color: #46ACC2;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+}
+
+.Navbar__Link {
+    padding-right: 8px;
+}
+
+.Navbar__Items {
+    display: flex;
+}
+
+.Navbar__Items--right {
+    margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Navbar__Items,
+    .Navbar {
+        flex-direction: column;
+    }
+
+    .Navbar__Items {
+        display: none;
+    }
+
+    .Navbar__Items--right {
+        margin-left: 0;
+    }
+
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+
+    .Navbar__Link-toggle {
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+    }
 }
