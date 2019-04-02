@@ -1,0 +1,37 @@
+html {
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    margin: 0
+}
+
+.Navbar {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.black {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80%;
+    background-color: black;
+    color: white;
+}
+
+.items {
+    margin-left: auto;
+    /* float: right;
+    display: flex;
+    color: grey;
+    text-decoration: none;
+    font-size: 20px; */
+}
+
+.white {
+    width: 20%;
+    background-color: green;
+
+}
