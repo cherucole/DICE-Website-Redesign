@@ -8,11 +8,10 @@ main {
 }
 
 
-
 .background {
     background-image: url('../img/battle_full.jpg');
     background-size: cover;
-    /* height: 100%; */
+    height: 100%;
 
 
 }
@@ -65,7 +64,7 @@ main {
 }
 
 #brand {
-    height: 30px;
+    height: 20px;
 }
 
 #item {
@@ -73,9 +72,12 @@ main {
 }
 
 .Navbar {
-    height: 70px;
+    height: 10% !important;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 /* Add a black background color to the top navigation */
@@ -91,7 +93,7 @@ main {
     float: left;
     color: grey;
     /* text-align: center; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* padding: 14px 16px; */
     text-decoration: none;
     font-size: 20px;
