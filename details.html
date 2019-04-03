@@ -2,44 +2,121 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        } */
-
-        html,
-        body {
+        .slider {
             width: 100%;
-            height: 100%;
-        }
-
-        .bg-img {
+            overflow: hidden;
             position: relative;
-            width: 100%;
-            height: 100%;
-            background: url('http://unsplash.it/1200x800') center center no-repeat;
-            background-size: cover;
+            margin: 0;
         }
 
-        .bg-img::after {
+        .edge {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            height: 100%;
+            display: block;
+        }
+
+        .edge:before {
             content: '';
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
             left: 0;
-            background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
-            opacity: 0.9;
+            background: -webkit-linear-gradient(left, white 10%, rgba(0, 0, 0, 0) 100%);
+            width: 25%;
+            height: 100%;
+        }
+
+        .edge:after {
+            content: '';
+            position: absolute;
+            right: 0;
+            background: -webkit-linear-gradient(right, white 10%, rgba(0, 0, 0, 0) 100%);
+            width: 25%;
+            height: 100%;
+        }
+
+        ul {
+            background: #ddd;
+            overflow: hidden;
+            width: 1000%;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 50px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="bg-img"></div>
+    <div class='slider'>
+        <div class="edge"></div>
+        <ul class="slideContainer" id="money_start">
+            <li class="slideItem">
+                EUR
+            </li>
+            <li class="slideItem">
+                USD
+            </li>
+            <li class="slideItem">
+                JPY
+            </li>
+            <li class="slideItem">
+                CNY
+            </li>
+            <li class="slideItem">
+                VD
+            </li>
+            <li class="slideItem">
+                GBP
+            </li>
+            <li class="slideItem">
+                AUD
+            </li>
+            <li class="slideItem">
+                CAD
+            </li>
+            <li class="slideItem">
+                CHF
+            </li>
+            <li class="slideItem">
+                XAU
+            </li>
+        </ul>
+    </div>
+    <script>
+        // polyfill
+        window.requestAnimationFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+        })();
 
+        var speed = 5000;
+        (function currencySlide() {
+            var currencyPairWidth = $('.slideItem:first-child').outerWidth();
+            $(".slideContainer").animate({
+                marginLeft: -currencyPairWidth
+            }, speed, 'linear', function () {
+                $(this).css({
+                    marginLeft: 0
+                }).find("li:last").after($(this).find("li:first"));
+            });
+            requestAnimationFrame(currencySlide);
+        })();
+    </script>
 </body>
 
 </html>
