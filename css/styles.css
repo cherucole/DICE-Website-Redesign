@@ -82,6 +82,10 @@ main {
 
 /* Add a black background color to the top navigation */
 .topnav {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center !important; */
     padding-left: 5%;
     width: 80%;
     background-color: black;
@@ -116,6 +120,10 @@ main {
 }
 
 .white {
+    height: 100%;
+    margin: 0;
+    /* padding: 1% 0; */
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
