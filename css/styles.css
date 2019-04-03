@@ -64,7 +64,7 @@ main {
 }
 
 #brand {
-    height: 20px;
+    height: 30px;
 }
 
 #item {
@@ -118,7 +118,11 @@ main {
 .topnav-right {
     float: right;
 }
-
+.dicelogo img{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
 .white {
     height: 100%;
     margin: 0;
