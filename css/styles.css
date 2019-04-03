@@ -20,19 +20,44 @@ body {
     height: 600px;
 }
 
-/* .mainbody::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 1));
-} */
+.content {
+    margin-top: 160px;
+    width: 70%;
+    margin-left: 10%;
+}
 
+.hero {
+    color: white;
+    font-size: 40px;
+    width: 70%;
+}
 
+.calltoaction {
+    margin-top: -40px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
 
+.calltoaction a {
+    text-decoration: none;
 
+}
+
+#discover {
+    margin-right: 80px;
+    color: white;
+    padding: 8px 50px;
+    background-color: #EA452E;
+    font-size: 25px;
+}
+
+#read {
+    color: black;
+    padding: 8px 30px;
+    background-color: white;
+    font-size: 25px;
+}
 
 #brand {
     height: 30px;
