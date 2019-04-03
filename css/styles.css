@@ -12,8 +12,6 @@ main {
     background-image: url('../img/battle_full.jpg');
     background-size: cover;
     height: 90%;
-
-
 }
 
 .mainbody {
@@ -22,6 +20,8 @@ main {
     background-size: cover;
     /* background-attachment: fixed; */
     height: 100% !important;
+    /* position: absolute; */
+
 }
 
 .content {
@@ -88,7 +88,7 @@ main {
     /* align-items: center !important; */
     padding-left: 5%;
     width: 80%;
-    background-color: black;
+    /* background-color: black; */
     overflow: hidden;
 }
 
