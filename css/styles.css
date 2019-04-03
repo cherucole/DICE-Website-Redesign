@@ -11,7 +11,7 @@ main {
 .background {
     background-image: url('../img/battle_full.jpg');
     background-size: cover;
-    height: 100%;
+    height: 90%;
 
 
 }
@@ -21,7 +21,7 @@ main {
     background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 1));
     background-size: cover;
     /* background-attachment: fixed; */
-    height: 610px;
+    height: 100% !important;
 }
 
 .content {
@@ -118,11 +118,13 @@ main {
 .topnav-right {
     float: right;
 }
-.dicelogo img{
+
+.dicelogo img {
     display: flex;
     align-items: center;
     /* justify-content: center; */
 }
+
 .white {
     height: 100%;
     margin: 0;
