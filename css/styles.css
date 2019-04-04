@@ -7,6 +7,9 @@ main {
     height: 100%;
 }
 
+.topnav-right .icon {
+    display: none;
+}
 
 .background {
     background-image: url('../img/battle_full.jpg');
@@ -216,3 +219,14 @@ li {
         margin-top: 40px;
     }
 }
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .Navbar {
+        background-color: yellow;
+    }
+}
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {}

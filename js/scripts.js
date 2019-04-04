@@ -1,30 +1,9 @@
-function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
+// function classToggle() {
+//     const navs = document.querySelectorAll('.Navbar__Items')
 
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
+//     navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+// }
 
-document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+// document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
-// polyfill
-window.requestAnimationFrame = (function () {
-    return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        function (callback) {
-            window.setTimeout(callback, 1000 / 60);
-        };
-})();
-
-var speed = 5000;
-(function currencySlide() {
-    var currencyPairWidth = $('.slideItem:first-child').outerWidth();
-    $(".slideContainer").animate({
-        marginLeft: -currencyPairWidth
-    }, speed, 'linear', function () {
-        $(this).css({
-            marginLeft: 0
-        }).find("li:last").after($(this).find("li:first"));
-    });
-    requestAnimationFrame(currencySlide);
-})();
+// alert("yes!")
