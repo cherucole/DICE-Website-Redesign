@@ -226,6 +226,23 @@ li {
     .Navbar {
         background-color: yellow;
     }
+
+    /* .topnav-right, .white {
+        display: none;
+    } */
+    .topnav-right a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav-right a.icon {
+        float: right;
+        display: block;
+    }
+
+    /* .topnav-right a.icon {
+        float: right;
+        display: block;
+    } */
 }
 
 
