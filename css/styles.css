@@ -309,8 +309,10 @@ li {
     }
 
     .content {
-        margin-top: 50px;
-        width: 100%;
+        margin-top: 40px;
+        width: 90%;
+        margin-left: 0;
+        padding-left: 10%;
     }
 
     .hero {
@@ -335,8 +337,8 @@ li {
 
     #read {
         padding: 8px 10px;
-        font-size: 18px;
-        width: 61%;
+        font-size: 16px;
+        width: 63%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -351,8 +353,10 @@ li {
     }
 
     .mainbody {
+        width: 100% !important;
+
         /* background-color: red; */
-        height: 800px !important;
+        height: 100% !important;
         /* background-repeat: no-repeat;
         background-size: auto; */
     }
@@ -360,7 +364,7 @@ li {
     .background {
         width: 100% !important;
         /* background-color: red; */
-        height: 800px !important;
+        height: 100% !important;
         /* background-repeat: no-repeat;
         background-size: auto; */
     }
