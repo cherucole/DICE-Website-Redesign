@@ -224,13 +224,18 @@ li {
 @media (min-width: 481px) and (max-width: 767px) {
 
     .Navbar {
-        background-color: yellow;
+        background-color: black;
     }
 
-    /* .topnav-right, .white {
+    .white {
+        display: none;
+    }
+
+    /* .topnav-right a:not(:first-child) {
         display: none;
     } */
-    .topnav-right a:not(:first-child) {
+
+    #item {
         display: none;
     }
 
@@ -238,11 +243,6 @@ li {
         float: right;
         display: block;
     }
-
-    /* .topnav-right a.icon {
-        float: right;
-        display: block;
-    } */
 }
 
 
