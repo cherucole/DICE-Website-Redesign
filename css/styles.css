@@ -230,10 +230,10 @@ li {
     .white {
         display: none;
     }
-
+/* enable the option below and disable the #item styling to enable responsive menu on mobile*/
     /* .topnav-right a:not(:first-child) {
         display: none;
-    } */
+    } */ 
 
     #item {
         display: none;
